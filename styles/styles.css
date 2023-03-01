@@ -27,9 +27,62 @@ body {
     3. Areas
 ////////////////////////*/
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    background-color: #FDEFEC;
+    border-radius: 10px;
+    padding: 60px;
+}
 
 
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+
+/* Mobiele apparaten */
+@media (max-width: 767px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: #F9C48B;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: #F69051;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #F26D40;
+    }
+}
